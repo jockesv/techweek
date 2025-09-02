@@ -1,22 +1,22 @@
 /* Globala variabler och reset */
 :root {
-    --primary-color: #2563eb;
-    --primary-dark: #1d4ed8;
-    --secondary-color: #7c3aed;
-    --accent-color: #06b6d4;
-    --text-primary: #1f2937;
-    --text-secondary: #6b7280;
-    --text-light: #f9fafb;
-    --bg-primary: #ffffff;
-    --bg-secondary: #f3f4f6;
-    --bg-dark: #111827;
-    --border-color: #e5e7eb;
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --primary-color: #00d4ff;
+    --primary-dark: #0099cc;
+    --secondary-color: #0066ff;
+    --accent-color: #66ccff;
+    --text-primary: #ffffff;
+    --text-secondary: #b3d9ff;
+    --text-light: #f0f8ff;
+    --bg-primary: #0a0e27;
+    --bg-secondary: #0f1538;
+    --bg-dark: #050815;
+    --border-color: #1e3a5f;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 212, 255, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 212, 255, 0.2), 0 2px 4px -1px rgba(0, 212, 255, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 212, 255, 0.3), 0 4px 6px -2px rgba(0, 212, 255, 0.2);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 212, 255, 0.4), 0 10px 10px -5px rgba(0, 212, 255, 0.3);
+    --gradient-primary: linear-gradient(135deg, #00d4ff 0%, #0066ff 100%);
+    --gradient-secondary: linear-gradient(135deg, #66ccff 0%, #00d4ff 100%);
 }
 
 * {
@@ -41,15 +41,15 @@ body {
 
 /* Header */
 .header {
-    background: var(--bg-primary);
-    box-shadow: var(--shadow-sm);
+    background: rgba(10, 14, 39, 0.9);
+    box-shadow: var(--shadow-md);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.2);
 }
 
 .header .container {
@@ -64,12 +64,14 @@ body {
     align-items: center;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--text-light);
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
 .logo i {
     margin-right: 0.5rem;
     font-size: 1.8rem;
+    color: var(--primary-color);
 }
 
 .nav ul {
@@ -80,14 +82,16 @@ body {
 
 .nav a {
     text-decoration: none;
-    color: var(--text-primary);
+    color: var(--text-secondary);
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
 }
 
 .nav a:hover {
-    color: var(--primary-color);
+    color: var(--text-light);
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
 }
 
 .nav a::after {
@@ -97,7 +101,8 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary-color);
+    background: var(--gradient-primary);
+    box-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
     transition: width 0.3s ease;
 }
 
@@ -107,12 +112,16 @@ body {
 
 /* Hero section */
 .hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(0, 212, 255, 0.05) 100%);
     color: var(--text-light);
     padding: 150px 0 100px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    background-image: url('neural_network_background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero::before {
@@ -122,8 +131,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,133.3C960,128,1056,96,1152,90.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-    background-size: cover;
+    background: radial-gradient(circle at center, rgba(0, 102, 255, 0.2) 0%, rgba(10, 14, 39, 0.9) 70%);
+    backdrop-filter: blur(0px);
 }
 
 .hero .container {
@@ -135,13 +144,18 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0 20px rgba(0, 212, 255, 0.8), 0 0 40px rgba(0, 102, 255, 0.4);
+    background: linear-gradient(135deg, var(--text-light) 0%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .subtitle {
     font-size: 1.25rem;
     margin-bottom: 2rem;
     opacity: 0.9;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
 .hero-dates {
@@ -151,24 +165,39 @@ body {
     gap: 0.5rem;
     font-size: 1.1rem;
     opacity: 0.95;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px rgba(102, 204, 255, 0.8);
 }
 
 .hero-dates i {
     font-size: 1.3rem;
+    color: var(--primary-color);
 }
 
 /* Program section */
 .program {
     padding: 80px 0;
     background: var(--bg-secondary);
+    position: relative;
+}
+
+.program::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.5), transparent);
 }
 
 .program h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: var(--text-primary);
+    color: var(--text-light);
     position: relative;
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
 }
 
 .program h2::after {
@@ -181,6 +210,7 @@ body {
     height: 4px;
     background: var(--gradient-primary);
     border-radius: 2px;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
 }
 
 /* Schedule */
@@ -191,16 +221,20 @@ body {
 }
 
 .day-card {
-    background: var(--bg-primary);
+    background: rgba(15, 21, 56, 0.8);
+    border: 1px solid rgba(0, 212, 255, 0.2);
     border-radius: 16px;
     box-shadow: var(--shadow-lg);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
 }
 
 .day-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-xl);
+    border-color: rgba(0, 212, 255, 0.5);
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
 }
 
 .day-header {
@@ -208,11 +242,29 @@ body {
     color: var(--text-light);
     padding: 1.5rem;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.day-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.day-card:hover .day-header::before {
+    left: 100%;
 }
 
 .day-header h3 {
     font-size: 1.5rem;
     font-weight: 600;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.8);
 }
 
 .day-content {
@@ -222,7 +274,15 @@ body {
 .lecture {
     margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.lecture:hover {
+    border-color: rgba(0, 212, 255, 0.3);
+    background: rgba(0, 212, 255, 0.05);
+    border-radius: 8px;
+    padding-left: 10px;
 }
 
 .lecture:last-child {
@@ -238,17 +298,20 @@ body {
     color: var(--primary-color);
     font-weight: 600;
     margin-bottom: 0.5rem;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.6);
 }
 
 .lecture-time i {
     font-size: 0.9rem;
+    color: var(--accent-color);
 }
 
 .lecture-title {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--text-light);
     margin-bottom: 0.5rem;
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.4);
 }
 
 .lecture-description {
@@ -260,9 +323,21 @@ body {
 /* Footer */
 .footer {
     background: var(--bg-dark);
-    color: var(--text-light);
+    color: var(--text-secondary);
     text-align: center;
     padding: 2rem 0;
+    border-top: 1px solid rgba(0, 212, 255, 0.2);
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.3), transparent);
 }
 
 /* Responsive design */
