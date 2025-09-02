@@ -1,0 +1,113 @@
+{
+  "techweek": {
+    "title": "Techweek 2024",
+    "dates": "2-6 december 2024",
+    "schedule": [
+      {
+        "day": "Måndag",
+        "date": "2 december",
+        "lectures": [
+          {
+            "time": "09:00 - 10:30",
+            "title": "AI och Maskininlärning: Framtidens Teknik",
+            "description": "En djupdykning i hur artificiell intelligens och maskininlärning förändrar vår värld. Vi utforsker de senaste trenderna, praktiska tillämpningar och etiska överväganden inom AI."
+          },
+          {
+            "time": "12:00 - 13:30",
+            "title": "Cybersäkerhet i en Digital Värld",
+            "description": "Lär dig om de senaste hoten inom cybersäkerhet och hur organisationer kan skydda sig. Vi täcker allt från grundläggande principer till avancerade säkerhetsstrategier."
+          },
+          {
+            "time": "14:00 - 15:30",
+            "title": "Molnteknik och DevOps: Skala Din Verksamhet",
+            "description": "Upptäck hur molnteknik och DevOps-principer kan revolutionera din utvecklingsprocess. Vi visar praktiska exempel på CI/CD, containerisering och automatisering."
+          }
+        ]
+      },
+      {
+        "day": "Tisdag",
+        "date": "3 december",
+        "lectures": [
+          {
+            "time": "09:00 - 10:30",
+            "title": "Blockchain och Kryptovalutor: Beyond Bitcoin",
+            "description": "Utforska blockchain-teknikens potential bortom kryptovalutor. Vi diskuterar smarta kontrakt, decentraliserade applikationer och framtiden för digitala transaktioner."
+          },
+          {
+            "time": "12:00 - 13:30",
+            "title": "Internet of Things (IoT): Ansluten Framtid",
+            "description": "Hur formar IoT vår vardag och industri? Vi tittar på plattformar, säkerhetsutmaningar och innovativa tillämpningar inom smarta hem och industriell IoT."
+          },
+          {
+            "time": "14:00 - 15:30",
+            "title": "Frontend-utveckling: Moderna Ramverk och Best Practices",
+            "description": "Uppdatera dina kunskaper inom frontend-utveckling. Vi täcker React, Vue, Angular och de senaste trenderna inom användarupplevelse och responsiv design."
+          }
+        ]
+      },
+      {
+        "day": "Onsdag",
+        "date": "4 december",
+        "lectures": [
+          {
+            "time": "09:00 - 10:30",
+            "title": "Data Science och Big Data: Dra Insikter från Data",
+            "description": "Lär dig hur du kan omvandla stora datamängder till värdefulla insikter. Vi täcker dataanalys, visualisering och maskininlärningsmodeller för affärsbeslut."
+          },
+          {
+            "time": "12:00 - 13:30",
+            "title": "Agil Utveckling och Projektledning",
+            "description": "Förbättra din utvecklingsprocess med agila metoder. Vi utforskar Scrum, Kanban och andra agila ramverk för effektiv projektledning och teamarbete."
+          },
+          {
+            "time": "14:00 - 15:30",
+            "title": "API:er och Mikrotjänster: Bygg Skalbara System",
+            "description": "Designa och implementera robusta API:er och mikrotjänitsarkitekturer. Vi täcker REST, GraphQL, service mesh och bästa praxis för mikrotjänster."
+          }
+        ]
+      },
+      {
+        "day": "Torsdag",
+        "date": "5 december",
+        "lectures": [
+          {
+            "time": "09:00 - 10:30",
+            "title": "Quantum Computing: Nästa Teknologiska Revolution",
+            "description": "Upptäck potentialen hos kvantdatorer och hur de kan lösa problem som är omöjliga för traditionella datorer. Vi utforskar grundläggande principer och praktiska tillämpningar."
+          },
+          {
+            "time": "12:00 - 13:30",
+            "title": "UX/UI Design: Skapa Exceptionella Användarupplevelser",
+            "description": "Lär dig principerna för användarcentrerad design. Vi täcker designprocesser, prototyping, användartester och hur man skapar engagerande gränssnitt."
+          },
+          {
+            "time": "14:00 - 15:30",
+            "title": "Edge Computing: Bearbeta Data på Kanten",
+            "description": "Förstå hur edge computing minskar latens och förbättrar prestanda för realtidsapplikationer. Vi tittar på arkitektur, tillämpningar och framtiden för distribuerad bearbetning."
+          }
+        ]
+      },
+      {
+        "day": "Fredag",
+        "date": "6 december",
+        "lectures": [
+          {
+            "time": "09:00 - 10:30",
+            "title": "Framtidens Arbetsplats: Hybridarbete och Digitalisering",
+            "description": "Utforska hur hybridarbete och digitalisering formar framtidens arbetsplatser. Vi diskuterar verktyg, strategier och hur man skapar en effektiv distansarbetskultur."
+          },
+          {
+            "time": "12:00 - 13:30",
+            "title": "Etik och Hållbarhet i Teknikindustrin",
+            "description": "Diskutera etiska överväganden och hållbarhetsaspekter inom teknik. Vi täcker dataskydd, algoritmisk rättvisa och hur teknik kan bidra till en hållbar framtid."
+          },
+          {
+            "time": "14:00 - 15:30",
+            "title": "Innovation och Entreprenörskap: Från Idé till Marknad",
+            "description": "Lär dig hur du kan omvandla en teknisk idé till ett framgångsrikt företag. Vi täcker affärsutveckling, finansiering och strategier för att nå marknaden."
+          }
+        ]
+      }
+    ]
+  }
+}
