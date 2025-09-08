@@ -18,7 +18,22 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const descriptionDiv = document.createElement('div');
         descriptionDiv.className = 'lecture-description';
-        descriptionDiv.textContent = lecture.description;
+        
+        // Truncate description to 100 characters if needed
+        const truncatedDescription = lecture.description.length > 100
+            ? lecture.description.substring(0, 100)
+            : lecture.description;
+        descriptionDiv.textContent = truncatedDescription;
+        
+        // Add class if description is truncated
+        if (lecture.description.length > 100) {
+            descriptionDiv.classList.add('truncated');
+        }
+        
+        // Store full description for modal
+        descriptionDiv.setAttribute('data-full-description', lecture.description);
+        descriptionDiv.setAttribute('data-title', lecture.title);
+        descriptionDiv.setAttribute('data-time', lecture.time);
         
         lectureDiv.appendChild(timeDiv);
         lectureDiv.appendChild(titleDiv);
@@ -141,4 +156,60 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(card);
         });
     }, 100);
+
+    // Modal functionality
+    const modal = document.getElementById('lecture-modal');
+    const modalTitle = document.getElementById('modal-title');
+    const modalTime = document.querySelector('.modal-time');
+    const modalDescription = document.querySelector('.modal-description');
+    const modalClose = document.querySelector('.modal-close');
+
+    // Function to open modal
+    function openModal(title, time, description) {
+        modalTitle.textContent = title;
+        modalTime.innerHTML = `<i class="far fa-clock"></i> ${time}`;
+        modalDescription.textContent = description;
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    // Function to close modal
+    function closeModal() {
+        modal.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    // Add click event listeners to entire lecture blocks
+    document.addEventListener('click', function(e) {
+        const lectureElement = e.target.closest('.lecture');
+        if (lectureElement) {
+            const descriptionElement = lectureElement.querySelector('.lecture-description');
+            const title = descriptionElement.getAttribute('data-title');
+            const time = descriptionElement.getAttribute('data-time');
+            const description = descriptionElement.getAttribute('data-full-description');
+            openModal(title, time, description);
+        }
+    });
+
+    // Close modal when clicking the close button
+    modalClose.addEventListener('click', closeModal);
+
+    // Close modal when clicking outside the modal content
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeModal();
+        }
+    });
+
+    // Prevent modal content clicks from closing the modal
+    document.querySelector('.modal-content').addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
 });
