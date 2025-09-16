@@ -15,7 +15,7 @@
           {
             "time": "11:30 - 12:30",
             "title": "Demo av hemautomationer",
-            "description": "Visa upp dina skrytbyggen hemifrån. Även egna appar."
+            "description": "Visa upp dina skrytbyggen hemifrån. Även egna appar. Alla är välkomna. Presentatörer bjuds på lunch."
           },
           {
             "time": "14:30 - 15:00",
@@ -35,13 +35,13 @@
           },
           {
             "time": "11:30 - 12:30",
-            "title": "Nätverk, Mattias",
-            "description": "XXX"
+            "title": "Grunderna i Nätverk, Mattias",
+            "description": "Hur hänger internet egentligen ihop? Vi reder ut grunderna – från IP-adresser, portar och protokoll till router, switch, brandvägg och trådlöst nätverk. En enkel introduktion för både nybörjare och den som vill fräscha upp sina kunskaper."
           },
           {
             "time": "14:30 - 15:00",
             "title": "AI-låtar, Daniel",
-            "description": "XXX"
+            "description": "Släpp lös din kreativitet och tämj din AI för att skapa den bästa AI-genererade låten! Vilka vanliga alternativ finns det för att skapa musik med hjälp av AI?"
           }
         ]
       },
@@ -51,13 +51,13 @@
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "GIT, Erik",
-            "description": "Git - Hur fungerar det egentligen? Vad är branch, commit och tag? Vad händer vid en merge? En djupdykning i Gits grundläggande delar."
+            "title": "Årekontoret eller Zubzero?",
+            "description": "XXX"
           },
           {
             "time": "11:30 - 12:30",
-            "title": "Fun With AI – Buzzwords & Bananas, Micke och Jocke",
-            "description": "Välkommen till en föreläsning där vi djupdyker i buzzwords (nästan) och spanar in det roliga, kreativa och galet imponerande som händer inom AI just nu – med massor av demos och framtidsspaningar. Målet? Att inspirera, underhålla och öppna ögonen för hur mycket mer AI är än kodförslag och chatbotar. Från nördigt till kreativt – här får du se framtiden hända."
+            "title": "GitHub Copilot 101 – Din nya parprogrammerare, Jocke och Micke",
+            "description": "Denna föreläsning ger en praktisk och inspirerande introduktion till hur GitHub Copilot kan bli din AI-drivna utvecklingspartner genom hela utvecklingsresan – från första kodraden till färdig produkt. Du kommer att få se hur Copilot inte bara är ett kodverktyg, utan ett stöd i hela utvecklingsprocessen – särskilt värdefullt för teamarbete, onboarding av nya utvecklare och snabb förståelse av komplexa kodbaser. Oavsett om du är nybörjare eller erfaren utvecklare kommer du att få praktiska tips på hur du kan integrera Copilot i din dagliga utveckling – på ett smart och ansvarsfullt sätt."
           },
           {
             "time": "14:30 - 15:00",
@@ -72,18 +72,18 @@
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "XXX, Blockchain? Mx GPT?, ZubZero",
-            "description": "XXX"
+            "title": "GIT, Erik",
+            "description": "Git - Hur fungerar det egentligen? Vad är branch, commit och tag? Vad händer vid en merge? En djupdykning i Gits grundläggande delar."
           },
           {
             "time": "11:30 - 12:30",
-            "title": "GitHub Copilot 101 – Din nya parprogrammerare, Jocke och Micke",
-            "description": "Denna föreläsning ger en praktisk och inspirerande introduktion till hur GitHub Copilot kan bli din AI-drivna utvecklingspartner genom hela utvecklingsresan – från första kodraden till färdig produkt. Du kommer att få se hur Copilot inte bara är ett kodverktyg, utan ett stöd i hela utvecklingsprocessen – särskilt värdefullt för teamarbete, onboarding av nya utvecklare och snabb förståelse av komplexa kodbaser. Oavsett om du är nybörjare eller erfaren utvecklare kommer du att få praktiska tips på hur du kan integrera Copilot i din dagliga utveckling – på ett smart och ansvarsfullt sätt."
+            "title": "Fun With AI – Buzzwords & Bananas, Micke och Jocke",
+            "description": "Välkommen till en föreläsning där vi djupdyker i buzzwords (nästan) och spanar in det roliga, kreativa och galet imponerande som händer inom AI just nu – med massor av demos och framtidsspaningar. Målet? Att inspirera, underhålla och öppna ögonen för hur mycket mer AI är än kodförslag och chatbotar. Från nördigt till kreativt – här får du se framtiden hända."
           },
           {
             "time": "14:30 - 15:00",
             "title": "Lokal 'Chatt-GPT', Roger",
-            "description": "Hur man kan sätta upp en lokal (ej molnbaserad) 'Chatt-GPT' och varför."
+            "description": "Hur kan man sätta upp en lokal (ej molnbaserad) 'Chatt-GPT' och varför."
           }
         ]
       },
@@ -93,13 +93,13 @@
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "XXX",
+            "title": "Årekontoret ellre Zubero",
             "description": "XXX"
           },
           {
-            "time": "11:30 - 12:30",
-            "title": "Gästföreläsare, Johan",
-            "description": "Datasäkerhet"
+            "time": "12:00 - 13:00",
+            "title": "Säkerhet & Utveckling #tillsammans Gästföreläsare, Johan",
+            "description": "Det finns en fördom om att säker utveckling måste vara jobbigt, svårt och omständigt. Det måste inte vara så! Vi som är utvecklare kan och bör använda tekniker som finns i form av ramverk, mönster, verktyg och automatiseringar, för att hela tiden bli lite bättre på att undvika kända och okända sårbarheter, dåliga beteenden och hot mot våra lösningar. En förutsättning: Vi gör det #tillsammans"
           },
 	  {
             "time": "14:30 - 15:00",
