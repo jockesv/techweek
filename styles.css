@@ -68,10 +68,11 @@ body {
     text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
-.logo i {
+.logo-image {
+    height: 2.0rem;
+    width: auto;
     margin-right: 0.5rem;
-    font-size: 1.8rem;
-    color: var(--primary-color);
+    object-fit: contain;
 }
 
 .nav ul {
