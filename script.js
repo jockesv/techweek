@@ -326,6 +326,51 @@ END:VCALENDAR`;
         }
     });
 
+    // Homeautomation modal functionality
+    const homeautomationLink = document.getElementById('homeautomation-link');
+    const homeautomationModal = document.getElementById('homeautomation-modal');
+    const homeautomationClose = homeautomationModal.querySelector('.modal-close');
+
+    // Function to open homeautomation modal
+    function openHomeautomationModal() {
+        homeautomationModal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    // Function to close homeautomation modal
+    function closeHomeautomationModal() {
+        homeautomationModal.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    // Add click event listener to homeautomation link
+    homeautomationLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        openHomeautomationModal();
+    });
+
+    // Close homeautomation modal when clicking the close button
+    homeautomationClose.addEventListener('click', closeHomeautomationModal);
+
+    // Close homeautomation modal when clicking outside the modal content
+    homeautomationModal.addEventListener('click', function(e) {
+        if (e.target === homeautomationModal) {
+            closeHomeautomationModal();
+        }
+    });
+
+    // Close homeautomation modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && homeautomationModal.classList.contains('active')) {
+            closeHomeautomationModal();
+        }
+    });
+
+    // Prevent homeautomation modal content clicks from closing the modal
+    homeautomationModal.querySelector('.modal-content').addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+
     // Add click event listeners to entire lecture blocks
     document.addEventListener('click', function(e) {
         const lectureElement = e.target.closest('.lecture');
@@ -359,5 +404,60 @@ END:VCALENDAR`;
     // Prevent modal content clicks from closing the modal
     document.querySelector('.modal-content').addEventListener('click', function(e) {
         e.stopPropagation();
+    });
+
+    // LAN evening modal functionality
+    const lanLink = document.getElementById('lan-link');
+    const lanModal = document.getElementById('lan-modal');
+    const lanClose = lanModal.querySelector('.modal-close');
+
+    // Function to open LAN modal
+    function openLanModal() {
+        lanModal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    // Function to close LAN modal
+    function closeLanModal() {
+        lanModal.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    // Add click event listener to LAN link
+    lanLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        openLanModal();
+    });
+
+    // Close LAN modal when clicking the close button
+    lanClose.addEventListener('click', closeLanModal);
+
+    // Close LAN modal when clicking outside the modal content
+    lanModal.addEventListener('click', function(e) {
+        if (e.target === lanModal) {
+            closeLanModal();
+        }
+    });
+
+    // Close LAN modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && lanModal.classList.contains('active')) {
+            closeLanModal();
+        }
+    });
+
+    // Prevent LAN modal content clicks from closing the modal
+    lanModal.querySelector('.modal-content').addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+
+    // Simball link functionality
+    const simballLink = document.getElementById('simball-link');
+    
+    // Add click event listener to Simball link
+    simballLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Open the Simball page in the same window
+        window.location.href = 'https://black-coast-075c6ea03.4.azurestaticapps.net/';
     });
 });

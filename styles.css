@@ -500,6 +500,60 @@ body {
     border-radius: 4px;
 }
 
+/* Homeautomation modal specific styles */
+.homeautomation-content {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.homeautomation-content p {
+    margin-bottom: 1rem;
+}
+
+.homeautomation-content p:last-child {
+    margin-bottom: 0;
+}
+
+.homeautomation-content strong {
+    color: var(--primary-color);
+}
+
+/* LAN modal specific styles */
+.lan-content {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.lan-content p {
+    margin-bottom: 1rem;
+}
+
+.lan-content p:last-child {
+    margin-bottom: 0;
+}
+
+.lan-content strong {
+    color: var(--primary-color);
+}
+
+/* Email link styling */
+.email-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.email-link:hover {
+    color: var(--text-light);
+    border-bottom-color: var(--text-light);
+    text-shadow: 0 0 5px rgba(0, 212, 255, 0.6);
+}
+
 .modal-body::-webkit-scrollbar-thumb:hover {
     background: var(--primary-dark);
 }

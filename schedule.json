@@ -30,8 +30,8 @@
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "Reqnroll, Tomas",
-            "description": "XXX"
+            "title": "Reqnroll, Roland",
+            "description": "En genomgång av testverktyget Reqnroll och hur det kan användas för att automatisera tester av API:er."
           },
           {
             "time": "11:30 - 12:30",
@@ -51,18 +51,13 @@
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "Årekontoret eller Zubzero?",
-            "description": "XXX"
+            "title": "Zubzero, Alee",
+            "description": "Alee berättar om resan och erfarenheter av att starta upp det största gamingeventet i norra Sverige."
           },
           {
             "time": "11:30 - 12:30",
             "title": "GitHub Copilot 101 – Din nya parprogrammerare, Jocke och Micke",
             "description": "Denna föreläsning ger en praktisk och inspirerande introduktion till hur GitHub Copilot kan bli din AI-drivna utvecklingspartner genom hela utvecklingsresan – från första kodraden till färdig produkt. Du kommer att få se hur Copilot inte bara är ett kodverktyg, utan ett stöd i hela utvecklingsprocessen – särskilt värdefullt för teamarbete, onboarding av nya utvecklare och snabb förståelse av komplexa kodbaser. Oavsett om du är nybörjare eller erfaren utvecklare kommer du att få praktiska tips på hur du kan integrera Copilot i din dagliga utveckling – på ett smart och ansvarsfullt sätt."
-          },
-          {
-            "time": "14:30 - 15:00",
-            "title": "Cloud, Åre??",
-            "description": "XXX"
           }
         ]
       },
@@ -92,16 +87,11 @@
         "date": "3 oktober",
         "lectures": [
           {
-            "time": "09:30 - 10:00",
-            "title": "Årekontoret ellre Zubero",
-            "description": "XXX"
-          },
-          {
             "time": "12:00 - 13:00",
             "title": "Säkerhet & Utveckling #tillsammans Gästföreläsare, Johan",
             "description": "Det finns en fördom om att säker utveckling måste vara jobbigt, svårt och omständigt. Det måste inte vara så! Vi som är utvecklare kan och bör använda tekniker som finns i form av ramverk, mönster, verktyg och automatiseringar, för att hela tiden bli lite bättre på att undvika kända och okända sårbarheter, dåliga beteenden och hot mot våra lösningar. En förutsättning: Vi gör det #tillsammans"
           },
-	  {
+	        {
             "time": "14:30 - 15:00",
             "title": "Avslutning, Simball-final och prisutdelning.",
             "description": "Vem vinner fotbollscupen? "
@@ -109,7 +99,7 @@
           {
             "time": "17:00 - 23:00",
             "title": "Spelkväll inkl. AW",
-            "description": "Afterwork, brädspel och dataspel under fredagskvällen"
+            "description": "Afterwork, brädspel och LAN-spel under fredagskvällen"
           }
         ]
       }

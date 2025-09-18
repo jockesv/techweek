@@ -18,9 +18,10 @@
             <nav class="nav">
                 <ul>
                     <li><a href="#program">Program</a></li>
-                    <li><a href="#speakers">Föreläsare</a></li>
-                    <li><a href="#location">Plats</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="#speakers">AI-musik</a></li>
+                    <li><a href="#" id="simball-link">Simball</a></li>
+                    <li><a href="#" id="homeautomation-link">Hemautomation</a></li>
+                    <li><a href="#" id="lan-link">LAN-kväll</a></li>
                 </ul>
             </nav>
         </div>
@@ -69,6 +70,42 @@
                         <i class="far fa-calendar-plus"></i>
                         Lägg till i Outlook
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for homeautomation popup -->
+    <div id="homeautomation-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="homeautomation-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="homeautomation-title" class="modal-title">Hemautomation</h3>
+                <button class="modal-close" aria-label="Stäng modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="homeautomation-content">
+                    <p>Måndag vid lunch den 29 september är det dags att visa upp era hemautomationer och andra spännande hemmabyggen.
+Alla som presenterar får dessutom lunch på plats den dagen. Presentationerna görs gärna "live" i vårt fikarum men även videoupptagningar på lösningen godkänns.</p>
+                    <p>Passa på och visa upp och skryt om era egna lösningar där hemma 😊
+<strong>Anmäl till <a href="mailto:anna.boden@cgi.com" class="email-link">anna.boden@cgi.com</a>, senast torsdag 25/9</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for LAN evening popup -->
+    <div id="lan-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="lan-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="lan-title" class="modal-title">LAN-kväll</h3>
+                <button class="modal-close" aria-label="Stäng modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="lan-content">
+                    <p>Dags att byta ut vscode mot headshots!
+På vår LAN-kväll blir det <strong>Counter-Strike</strong> där du får chansen att sätta chefen i spectate-läge och visa vem som egentligen förtjänar MVP.
+Förbered dig på en kväll full av skratt, laganda och kanske lite skadeglädje.</p>
+                    <p>Anmälningen till LAN-kvällen görs till Michael Björn, <strong><a href="mailto:michael.bjorn@cgi.com" class="email-link">michael.bjorn@cgi.com</a></strong></p>
                 </div>
             </div>
         </div>
