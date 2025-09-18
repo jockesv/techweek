@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const scheduleContainer = document.getElementById('schedule-container');
     
     // Funktion för att skapa föreläsningselement
-    function createLectureElement(lecture) {
+    function createLectureElement(lecture, date) {
         const lectureDiv = document.createElement('div');
         lectureDiv.className = 'lecture';
         
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         descriptionDiv.setAttribute('data-full-description', lecture.description);
         descriptionDiv.setAttribute('data-title', lecture.title);
         descriptionDiv.setAttribute('data-time', lecture.time);
+        descriptionDiv.setAttribute('data-date', date);
         
         lectureDiv.appendChild(timeDiv);
         lectureDiv.appendChild(titleDiv);
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Skapa föreläsnings-element för varje föreläsning
         dayData.lectures.forEach(lecture => {
-            const lectureElement = createLectureElement(lecture);
+            const lectureElement = createLectureElement(lecture, dayData.date);
             dayContent.appendChild(lectureElement);
         });
         
@@ -163,12 +164,149 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalTime = document.querySelector('.modal-time');
     const modalDescription = document.querySelector('.modal-description');
     const modalClose = document.querySelector('.modal-close');
+    const outlookButton = document.getElementById('add-to-outlook');
+
+    // Current lecture data for Outlook integration
+    let currentLecture = null;
+
+    // Function to generate ICS file content
+    function generateICSContent(lecture) {
+        // Parse the date and time to create a proper date object
+        const dateMap = {
+            '29 september': '20250929',
+            '30 september': '20250930',
+            '1 oktober': '20251001',
+            '2 oktober': '20251002',
+            '3 oktober': '20251003'
+        };
+
+        const lectureDate = dateMap[lecture.date];
+        const timeStart = lecture.time.split(' - ')[0];
+        const timeEnd = lecture.time.split(' - ')[1];
+
+        // Create start and end datetime strings in local time (Europe/Stockholm, UTC+2)
+        const startDateTime = `${lectureDate}T${timeStart.replace(':', '')}00`;
+        const endDateTime = `${lectureDate}T${timeEnd.replace(':', '')}00`;
+
+        // Create ICS content with proper timezone handling
+        const icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//GDC Techweek//Event//EN
+BEGIN:VTIMEZONE
+TZID:Europe/Stockholm
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:${Date.now()}@gdctechweek.se
+DTSTAMP:${new Date().toISOString().replace(/[-:]/g, '').split('.')[0]}Z
+DTSTART;TZID=Europe/Stockholm:${startDateTime}
+DTEND;TZID=Europe/Stockholm:${endDateTime}
+SUMMARY:${lecture.title}
+DESCRIPTION:${lecture.description.replace(/\\n/g, '\\\\n')}
+LOCATION:GDC Office
+END:VEVENT
+END:VCALENDAR`;
+
+        return icsContent;
+    }
+
+    // Function to open ICS file inline
+    function openICSFileInline(lecture) {
+        const icsContent = generateICSContent(lecture);
+        const blob = new Blob([icsContent], {
+            type: 'text/calendar;charset=utf-8',
+            ending: '\n'
+        });
+        
+        // Create object URL with proper MIME type
+        const url = URL.createObjectURL(blob);
+        
+        // Create a new window/tab to open the file
+        const newWindow = window.open(url, '_blank');
+        
+        // Clean up after a delay
+        setTimeout(() => {
+            URL.revokeObjectURL(url);
+            if (newWindow) {
+                newWindow.close();
+            }
+        }, 1000);
+    }
+
+    // Function to download ICS file (fallback)
+    function downloadICSFile(lecture) {
+        const icsContent = generateICSContent(lecture);
+        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `${lecture.title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.ics`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        URL.revokeObjectURL(url);
+    }
+
+    // Function to generate Outlook calendar URL
+    function generateOutlookUrl(lecture) {
+        // Parse the date and time to create a proper date object
+        const currentYear = 2025;
+        const dateMap = {
+            '29 september': '2025-09-29',
+            '30 september': '2025-09-30',
+            '1 oktober': '2025-10-01',
+            '2 oktober': '2025-10-02',
+            '3 oktober': '2025-10-03'
+        };
+
+        const lectureDate = dateMap[lecture.date];
+        const timeStart = lecture.time.split(' - ')[0];
+        const timeEnd = lecture.time.split(' - ')[1];
+
+        // Create start and end datetime strings in UTC format
+        const startDateTime = `${lectureDate}T${timeStart.replace(':', '')}00`;
+        const endDateTime = `${lectureDate}T${timeEnd.replace(':', '')}00`;
+
+        // Encode the parameters for the URL
+        const subject = encodeURIComponent(lecture.title);
+        const body = encodeURIComponent(lecture.description);
+        const location = encodeURIComponent('GDC Office');
+
+        // Outlook Web URL format
+        const outlookUrl = `https://outlook.live.com/calendar/0/deeplink/compose?subject=${subject}&startdt=${startDateTime}&enddt=${endDateTime}&body=${body}&location=${location}`;
+
+        return outlookUrl;
+    }
 
     // Function to open modal
-    function openModal(title, time, description) {
+    function openModal(title, time, description, date) {
         modalTitle.textContent = title;
         modalTime.innerHTML = `<i class="far fa-clock"></i> ${time}`;
         modalDescription.textContent = description;
+        
+        // Store current lecture data for Outlook integration
+        currentLecture = {
+            title: title,
+            time: time,
+            description: description,
+            date: date
+        };
+        
         modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
     }
@@ -177,7 +315,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function closeModal() {
         modal.classList.remove('active');
         document.body.style.overflow = ''; // Restore scrolling
+        currentLecture = null; // Clear current lecture data
     }
+
+    // Add to Outlook button event listener
+    outlookButton.addEventListener('click', function() {
+        if (currentLecture) {
+            // Try to open ICS file inline first
+            openICSFileInline(currentLecture);
+        }
+    });
 
     // Add click event listeners to entire lecture blocks
     document.addEventListener('click', function(e) {
@@ -187,7 +334,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const title = descriptionElement.getAttribute('data-title');
             const time = descriptionElement.getAttribute('data-time');
             const description = descriptionElement.getAttribute('data-full-description');
-            openModal(title, time, description);
+            const date = descriptionElement.getAttribute('data-date');
+            openModal(title, time, description, date);
         }
     });
 
