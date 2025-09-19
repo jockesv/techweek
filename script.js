@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
         descriptionDiv.setAttribute('data-title', lecture.title);
         descriptionDiv.setAttribute('data-time', lecture.time);
         descriptionDiv.setAttribute('data-date', date);
+        // Store teams link (may be empty)
+        descriptionDiv.setAttribute('data-teams-link', lecture['teams-link'] || '');
         
         lectureDiv.appendChild(timeDiv);
         lectureDiv.appendChild(titleDiv);
@@ -165,6 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const modalDescription = document.querySelector('.modal-description');
     const modalClose = document.querySelector('.modal-close');
     const outlookButton = document.getElementById('add-to-outlook');
+    const teamsButton = document.getElementById('open-in-teams');
 
     // Current lecture data for Outlook integration
     let currentLecture = null;
@@ -294,18 +297,30 @@ END:VCALENDAR`;
     }
 
     // Function to open modal
-    function openModal(title, time, description, date) {
+    function openModal(title, time, description, date, teamsLink) {
         modalTitle.textContent = title;
         modalTime.innerHTML = `<i class="far fa-clock"></i> ${time}`;
         modalDescription.textContent = description;
         
-        // Store current lecture data for Outlook integration
+        // Store current lecture data for Outlook integration and Teams
         currentLecture = {
             title: title,
             time: time,
             description: description,
-            date: date
+            date: date,
+            teamsLink: teamsLink || ''
         };
+        
+        // Enable or disable the Teams button depending on availability
+        if (teamsButton) {
+            if (currentLecture.teamsLink) {
+                teamsButton.removeAttribute('disabled');
+                teamsButton.style.display = ''; // ensure visible
+            } else {
+                teamsButton.setAttribute('disabled', 'true');
+                teamsButton.style.display = 'none';
+            }
+        }
         
         modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent background scrolling
@@ -325,6 +340,16 @@ END:VCALENDAR`;
             openICSFileInline(currentLecture);
         }
     });
+    
+    // Add to Teams button event listener
+    if (teamsButton) {
+        teamsButton.addEventListener('click', function() {
+            if (currentLecture && currentLecture.teamsLink) {
+                // Open the Teams meeting URL in a new tab/window
+                window.open(currentLecture.teamsLink, '_blank');
+            }
+        });
+    }
 
     // Homeautomation modal functionality
     const homeautomationLink = document.getElementById('homeautomation-link');
@@ -380,7 +405,8 @@ END:VCALENDAR`;
             const time = descriptionElement.getAttribute('data-time');
             const description = descriptionElement.getAttribute('data-full-description');
             const date = descriptionElement.getAttribute('data-date');
-            openModal(title, time, description, date);
+            const teamsLink = descriptionElement.getAttribute('data-teams-link');
+            openModal(title, time, description, date, teamsLink);
         }
     });
 

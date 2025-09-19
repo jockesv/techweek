@@ -10,17 +10,20 @@
           {
             "time": "09:30 - 10:00",
             "title": "Uppstart och information om Techweek-veckan",
-            "description": "Samling i fikarummet för genomgång av veckan och djupdykning i schemat"
+            "description": "Samling i fikarummet för genomgång av veckan och djupdykning i schemat",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTViMGEwYzctYWQ0YS00ZmQwLWJhZTYtMjgyNTMyZDE5Nzg1%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "11:30 - 12:30",
             "title": "Demo av hemautomationer",
-            "description": "Visa upp dina skrytbyggen hemifrån. Även egna appar. Alla är välkomna. Presentatörer bjuds på lunch."
+            "description": "Visa upp dina skrytbyggen hemifrån. Även egna appar. Alla är välkomna. Presentatörer bjuds på lunch.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTg3N2NjODMtN2I5NC00NjIwLTkyMzMtYTFmZWM5ZDBlZDcy%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "14:30 - 15:00",
             "title": "PWA, Niklas",
-            "description": "PWA är kortfattat en webbapplikation som beter sig som en app och kan installeras som en app. Här får du en introduktion och exempel i hur det fungerar."
+            "description": "PWA är kortfattat en webbapplikation som beter sig som en app och kan installeras som en app. Här får du en introduktion och exempel i hur det fungerar.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDUwZjZmYzMtZDA1YS00YjY5LTljYjUtYTgwZDdhNjk1ZDM2%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           }
         ]
       },
@@ -31,17 +34,20 @@
           {
             "time": "09:30 - 10:00",
             "title": "Från krav till kod – med Reqnroll och fika, Roland",
-            "description": "Introduktion till Reqnroll som är ett öppet BDD-ramverk för .NET. Ramverket kan användas för att länka samma krav med test, och på så sätt få begripligare automatiserade tester som kan kommuniceras med verksamheten."
+            "description": "Introduktion till Reqnroll som är ett öppet BDD-ramverk för .NET. Ramverket kan användas för att länka samma krav med test, och på så sätt få begripligare automatiserade tester som kan kommuniceras med verksamheten.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzFhZWEyZmEtNTllYS00ZmY0LWFlOTgtZGI4MGNkMzg5NDhk%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "11:30 - 12:30",
             "title": "Grunderna i Nätverk, Mattias",
-            "description": "Hur hänger internet egentligen ihop? Vi reder ut grunderna – från IP-adresser, portar och protokoll till router, switch, brandvägg och trådlöst nätverk. En enkel introduktion för både nybörjare och den som vill fräscha upp sina kunskaper."
+            "description": "Hur hänger internet egentligen ihop? Vi reder ut grunderna – från IP-adresser, portar och protokoll till router, switch, brandvägg och trådlöst nätverk. En enkel introduktion för både nybörjare och den som vill fräscha upp sina kunskaper.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTMyM2RiNWYtZWVmMy00N2U2LWJjNjMtNmZhM2Y0ZGM5M2Nh%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "14:30 - 15:00",
             "title": "Delta i AI Song Contest, Daniel",
-            "description": "Släpp lös din kreativitet och tämj din AI för att skapa den bästa AI-genererade låten! Vilka vanliga alternativ finns det för att skapa musik med hjälp av AI? Lägg till din egen låt för att delta i tävlingen. Alla får vara med och rösta fram bästa bidraget."
+            "description": "Släpp lös din kreativitet och tämj din AI för att skapa den bästa AI-genererade låten! Vilka vanliga alternativ finns det för att skapa musik med hjälp av AI? Lägg till din egen låt för att delta i tävlingen. Alla får vara med och rösta fram bästa bidraget.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTZmMTlhZWYtZTZiNC00ZWNlLTg5MDYtZGVjYjQ3NzkzZTJl%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           }
         ]
       },
@@ -52,12 +58,14 @@
           {
             "time": "09:30 - 10:00",
             "title": "SubZero E-Games: Resan, tekniken och visionen, Alee",
-            "description": "Föreläsningen berättar om hur SubZero skapades, varför vi finns, hur AI och data har hjälpt oss längs vägen och vart vi är på väg."
+            "description": "Föreläsningen berättar om hur SubZero skapades, varför vi finns, hur AI och data har hjälpt oss längs vägen och vart vi är på väg.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWZlYzQ3MDQtOWE1MC00ZmY4LWEwNTgtYWYyN2I1MzU4NDZi%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "11:30 - 12:30",
             "title": "GitHub Copilot 101 – Din nya parprogrammerare, Jocke och Micke",
-            "description": "Denna föreläsning ger en praktisk och inspirerande introduktion till hur GitHub Copilot kan bli din AI-drivna utvecklingspartner genom hela utvecklingsresan – från första kodraden till färdig produkt. Du kommer att få se hur Copilot inte bara är ett kodverktyg, utan ett stöd i hela utvecklingsprocessen – särskilt värdefullt för teamarbete, onboarding av nya utvecklare och snabb förståelse av komplexa kodbaser. Oavsett om du är nybörjare eller erfaren utvecklare kommer du att få praktiska tips på hur du kan integrera Copilot i din dagliga utveckling – på ett smart och ansvarsfullt sätt."
+            "description": "Denna föreläsning ger en praktisk och inspirerande introduktion till hur GitHub Copilot kan bli din AI-drivna utvecklingspartner genom hela utvecklingsresan – från första kodraden till färdig produkt. Du kommer att få se hur Copilot inte bara är ett kodverktyg, utan ett stöd i hela utvecklingsprocessen – särskilt värdefullt för teamarbete, onboarding av nya utvecklare och snabb förståelse av komplexa kodbaser. Oavsett om du är nybörjare eller erfaren utvecklare kommer du att få praktiska tips på hur du kan integrera Copilot i din dagliga utveckling – på ett smart och ansvarsfullt sätt.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZWRiZTM4ODAtM2IwZC00OTk4LThjYTUtYjgzYzNkMjFkZWM5%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           }
         ]
       },
@@ -68,17 +76,20 @@
           {
             "time": "09:30 - 10:00",
             "title": "GIT, Erik",
-            "description": "Git - Hur fungerar det egentligen? Vad är branch, commit och tag? Vad händer vid en merge? En djupdykning i Gits grundläggande delar."
+            "description": "Git - Hur fungerar det egentligen? Vad är branch, commit och tag? Vad händer vid en merge? En djupdykning i Gits grundläggande delar.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWY3YzM0NzMtMGNmYy00NTRkLWFlNzAtZWQ5Y2UxMjI2NjFk%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "11:30 - 12:30",
             "title": "Fun With AI – Buzzwords & Bananas, Micke och Jocke",
-            "description": "Välkommen till en föreläsning där vi djupdyker i buzzwords (nästan) och spanar in det roliga, kreativa och galet imponerande som händer inom AI just nu – med massor av demos och framtidsspaningar. Målet? Att inspirera, underhålla och öppna ögonen för hur mycket mer AI är än kodförslag och chatbotar. Från nördigt till kreativt – här får du se framtiden hända."
+            "description": "Välkommen till en föreläsning där vi djupdyker i buzzwords (nästan) och spanar in det roliga, kreativa och galet imponerande som händer inom AI just nu – med massor av demos och framtidsspaningar. Målet? Att inspirera, underhålla och öppna ögonen för hur mycket mer AI är än kodförslag och chatbotar. Från nördigt till kreativt – här får du se framtiden hända.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjQ3NTBjOGYtNDQ1OS00MWEwLWE4MTEtNWM1MDBmY2QyNzc5%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "14:30 - 15:00",
             "title": "Lokal 'Chatt-GPT', Roger",
-            "description": "Hur kan man sätta upp en lokal (ej molnbaserad) 'Chatt-GPT' och varför."
+            "description": "Hur kan man sätta upp en lokal (ej molnbaserad) 'Chatt-GPT' och varför.",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZThiMjU2MTktY2Y2ZS00MmQyLTk5ODAtNjIwNGIyYWJlOTRj%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           }
         ]
       },
@@ -89,17 +100,20 @@
           {
             "time": "12:00 - 13:00",
             "title": "Säkerhet & Utveckling #tillsammans Gästföreläsare, Johan",
-            "description": "Det finns en fördom om att säker utveckling måste vara jobbigt, svårt och omständigt. Det måste inte vara så! Vi som är utvecklare kan och bör använda tekniker som finns i form av ramverk, mönster, verktyg och automatiseringar, för att hela tiden bli lite bättre på att undvika kända och okända sårbarheter, dåliga beteenden och hot mot våra lösningar. En förutsättning: Vi gör det #tillsammans"
+            "description": "Det finns en fördom om att säker utveckling måste vara jobbigt, svårt och omständigt. Det måste inte vara så! Vi som är utvecklare kan och bör använda tekniker som finns i form av ramverk, mönster, verktyg och automatiseringar, för att hela tiden bli lite bättre på att undvika kända och okända sårbarheter, dåliga beteenden och hot mot våra lösningar. En förutsättning: Vi gör det #tillsammans",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmVmNjQ0YmUtNmI4NC00NDQ3LWI3ZmYtYTI5NGUyZTYwYmNi%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
 	        {
             "time": "14:30 - 15:00",
             "title": "Avslutning och Prisutdelning",
-            "description": "Vem vinner fotbollscupen? "
+            "description": "Vem vinner fotbollscupen? ",
+            "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YTc3YWQ0MjAtOGUzYy00MmQzLWJlMWEtMDdjOWI2OTZhM2Vj%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "17:00 - 23:00",
             "title": "Spelkväll inkl. AW",
-            "description": "Afterwork, brädspel och LAN-spel under fredagskvällen"
+            "description": "Afterwork, brädspel och LAN-spel under fredagskvällen",
+            "teams-link": ""
           }
         ]
       }

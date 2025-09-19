@@ -450,6 +450,7 @@ body {
     border-top: 1px solid rgba(0, 212, 255, 0.2);
     display: flex;
     justify-content: center;
+    gap: 1rem;
 }
 
 .outlook-button {
@@ -483,6 +484,50 @@ body {
 .outlook-button i {
     font-size: 1rem;
     color: var(--text-light);
+}
+
+.teams-button {
+    background: linear-gradient(135deg, #0078d4 0%, #005a9e 100%);
+    border: none;
+    border-radius: 8px;
+    color: var(--text-light);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    text-shadow: 0 0 5px rgba(0, 120, 212, 0.6);
+}
+
+.teams-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    background: linear-gradient(135deg, #005a9e 0%, #003d7a 100%);
+}
+
+.teams-button:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-sm);
+}
+
+.teams-button i {
+    font-size: 1rem;
+    color: var(--text-light);
+}
+
+.teams-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: linear-gradient(135deg, #404040 0%, #303030 100%);
+}
+
+.teams-button:disabled:hover {
+    transform: none;
+    box-shadow: var(--shadow-sm);
 }
 
 /* Scrollbar styling for modal */
