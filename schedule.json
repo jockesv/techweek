@@ -30,8 +30,8 @@
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "Reqnroll, Roland",
-            "description": "En genomgång av testverktyget Reqnroll och hur det kan användas för att automatisera tester av API:er."
+            "title": "Från krav till kod – med Reqnroll och fika, Roland",
+            "description": "Introduktion till Reqnroll som är ett öppet BDD-ramverk för .NET. Ramverket kan användas för att länka samma krav med test, och på så sätt få begripligare automatiserade tester som kan kommuniceras med verksamheten."
           },
           {
             "time": "11:30 - 12:30",
@@ -40,8 +40,8 @@
           },
           {
             "time": "14:30 - 15:00",
-            "title": "AI-låtar, Daniel",
-            "description": "Släpp lös din kreativitet och tämj din AI för att skapa den bästa AI-genererade låten! Vilka vanliga alternativ finns det för att skapa musik med hjälp av AI?"
+            "title": "Delta i AI Song Contest, Daniel",
+            "description": "Släpp lös din kreativitet och tämj din AI för att skapa den bästa AI-genererade låten! Vilka vanliga alternativ finns det för att skapa musik med hjälp av AI? Lägg till din egen låt för att delta i tävlingen. Alla får vara med och rösta fram bästa bidraget."
           }
         ]
       },
@@ -51,8 +51,8 @@
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "Zubzero, Alee",
-            "description": "Alee berättar om resan och erfarenheter av att starta upp det största gamingeventet i norra Sverige."
+            "title": "SubZero E-Games: Resan, tekniken och visionen, Alee",
+            "description": "Föreläsningen berättar om hur SubZero skapades, varför vi finns, hur AI och data har hjälpt oss längs vägen och vart vi är på väg."
           },
           {
             "time": "11:30 - 12:30",
@@ -93,7 +93,7 @@
           },
 	        {
             "time": "14:30 - 15:00",
-            "title": "Avslutning, Simball-final och prisutdelning.",
+            "title": "Avslutning och Prisutdelning",
             "description": "Vem vinner fotbollscupen? "
           },
           {
