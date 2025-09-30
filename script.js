@@ -477,6 +477,16 @@ END:VCALENDAR`;
         e.stopPropagation();
     });
 
+    // AI music link functionality
+    const aiMusicLink = document.getElementById('ai-music-link');
+    
+    // Add click event listener to AI music link
+    aiMusicLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Open the AI music page in the same window
+        window.location.href = 'https://ai-song-contest-dpawd9ccema6c6e6.northeurope-01.azurewebsites.net/';
+    });
+
     // Simball link functionality
     const simballLink = document.getElementById('simball-link');
     
