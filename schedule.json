@@ -5,48 +5,48 @@
     "schedule": [
       {
         "day": "Måndag",
-        "date": "29 september",
+        "date": "28 september",
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "Uppstart och information om Techweek-veckan",
-            "description": "SLUnchpass..för genomgång av veckan och djupdykning i schemat",
+            "title": "Uppstart och information om Techweek-veckan. Delta i AI Song Contest, Daniel",
+            "description": "Samling för genomgång av veckan och djupdykning i schemat. Släpp lös din kreativitet och tämj din AI för att skapa den bästa AI-genererade låten! Vilka vanliga alternativ finns det för att skapa musik med hjälp av AI? Lägg till din egen låt för att delta i tävlingen. Alla får vara med och rösta fram bästa bidraget.",
             "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTViMGEwYzctYWQ0YS00ZmQwLWJhZTYtMjgyNTMyZDE5Nzg1%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "11:30 - 12:30",
-            "title": "Lunchpass...",
-            "description": "Visa upp dina skrytbyggen hemifrån. Även egna appar. Alla är välkomna. Presentatörer bjuds på lunch.",
+            "title": "Demo av roligt inom AI med Micke Björn och Jocke Svensberg",
+            "description": "Oneliner",
             "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OTg3N2NjODMtN2I5NC00NjIwLTkyMzMtYTFmZWM5ZDBlZDcy%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "14:30 - 15:00",
-            "title": "PWA, Niklas",
-            "description": "PWA är kortfattat en webbapplikation som beter sig som en app och kan installeras som en app. Här får du en introduktion och exempel i hur det fungerar.",
+            "title": "Kryptering/Säkerhet med Mattias Kågström",
+            "description": "Oneliner",
             "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDUwZjZmYzMtZDA1YS00YjY5LTljYjUtYTgwZDdhNjk1ZDM2%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           }
         ]
       },
       {
         "day": "Tisdag",
-        "date": "30 september",
+        "date": "29 september",
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "Från krav till kod – med Reqnroll och fika, Roland",
-            "description": "Introduktion till Reqnroll som är ett öppet BDD-ramverk för .NET. Ramverket kan användas för att länka samma krav med test, och på så sätt få begripligare automatiserade tester som kan kommuniceras med verksamheten.",
+            "title": "UX-detektiverna med Maria Westlund och Line Asp",
+            "description": "Oneliner",
             "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzFhZWEyZmEtNTllYS00ZmY0LWFlOTgtZGI4MGNkMzg5NDhk%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "11:30 - 12:30",
-            "title": "Grunderna i Nätverk, Mattias",
-            "description": "Hur hänger internet egentligen ihop? Vi reder ut grunderna – från IP-adresser, portar och protokoll till router, switch, brandvägg och trådlöst nätverk. En enkel introduktion för både nybörjare och den som vill fräscha upp sina kunskaper.",
+            "title": "Nyheter inom AI med Jocke Svensberg och Micke Björn",
+            "description": "Oneliner",
             "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTMyM2RiNWYtZWVmMy00N2U2LWJjNjMtNmZhM2Y0ZGM5M2Nh%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
             "time": "14:30 - 15:00",
-            "title": "Delta i AI Song Contest, Daniel",
-            "description": "Släpp lös din kreativitet och tämj din AI för att skapa den bästa AI-genererade låten! Vilka vanliga alternativ finns det för att skapa musik med hjälp av AI? Lägg till din egen låt för att delta i tävlingen. Alla får vara med och rösta fram bästa bidraget.",
+            "title": "Kubernetes med Henrik Esmaili",
+            "description": "",
             "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTZmMTlhZWYtZTZiNC00ZWNlLTg5MDYtZGVjYjQ3NzkzZTJl%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           }
         ]
