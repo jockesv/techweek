@@ -46,19 +46,19 @@
           {
             "time": "14:30 - 15:00",
             "title": "Kubernetes med Henrik Esmaili",
-            "description": "",
+            "description": "Från modell till kluster: Kubernetes i praktiken",
             "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NTZmMTlhZWYtZTZiNC00ZWNlLTg5MDYtZGVjYjQ3NzkzZTJl%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           }
         ]
       },
       {
         "day": "Onsdag",
-        "date": "1 oktober",
+        "date": "30 september",
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "SubZero E-Games: Resan, tekniken och visionen, Alee",
-            "description": "Föreläsningen berättar om hur SubZero skapades, varför vi finns, hur AI och data har hjälpt oss längs vägen och vart vi är på väg.",
+            "title": "Playwrite med Niklas Boije Moberg",
+            "description": "BDD testning med Playwrite och Gherkin",
             "teams-link": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWZlYzQ3MDQtOWE1MC00ZmY4LWEwNTgtYWYyN2I1MzU4NDZi%40thread.v2/0?context=%7b%22Tid%22%3a%22b9fec68c-c92d-461e-9a97-3d03a0f18b82%22%2c%22Oid%22%3a%22ba2a1fe9-1751-43af-88a0-2cc819c7fb1d%22%7d"
           },
           {
