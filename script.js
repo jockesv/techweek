@@ -484,7 +484,7 @@ END:VCALENDAR`;
     aiMusicLink.addEventListener('click', function(e) {
         e.preventDefault();
         // Open the AI music page in the same window
-        window.location.href = 'https://ai-song-contest-dpawd9ccema6c6e6.northeurope-01.azurewebsites.net/';
+        window.location.href = 'https://app-contest-g4sglvuhd2ikc.azurewebsites.net/';
     });
 
     // Simball link functionality
@@ -494,6 +494,6 @@ END:VCALENDAR`;
     simballLink.addEventListener('click', function(e) {
         e.preventDefault();
         // Open the Simball page in the same window
-        window.location.href = 'https://black-coast-075c6ea03.4.azurestaticapps.net/';
+        window.location.href = 'https://footballbabylon.z1.web.core.windows.net/';
     });
 });
