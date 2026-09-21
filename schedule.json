@@ -57,8 +57,8 @@
         "lectures": [
           {
             "time": "09:30 - 10:00",
-            "title": "Playwrite med Niklas Boije Moberg",
-            "description": "BDD testning med Playwrite och Gherkin",
+            "title": "Playwright med Niklas Boije Moberg",
+            "description": "BDD testning med Playwright och Gherkin",
             "teams-link": "https://teams.microsoft.com/meet/259362563749?p=wr18VhCCDEIVCItdeM"
           },
           {
