@@ -176,11 +176,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function generateICSContent(lecture) {
         // Parse the date and time to create a proper date object
         const dateMap = {
-            '29 september': '20250929',
-            '30 september': '20250930',
-            '1 oktober': '20251001',
-            '2 oktober': '20251002',
-            '3 oktober': '20251003'
+            '28 september': '20260928',
+            '29 september': '20260929',
+            '30 september': '20260930',
+            '1 oktober': '20261001',
+            '2 oktober': '20261002'
         };
 
         const lectureDate = dateMap[lecture.date];
